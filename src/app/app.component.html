@@ -1,0 +1,14 @@
+<input [(ngModel)]="filterString" (ngModelChange)="onFilterChange()" />
+
+<table>
+  <tr *ngFor="let row of filtered">
+    <td>{{row.number_invoice}}</td>
+    <td>{{row.note_invoice}}</td>
+    <td>{{row.state_invoice}}</td>
+    <td>{{row.customer_invoice}}</td>
+    <td>{{row.date_invoice}}</td>
+    <td>{{row.days_invoice}}</td>
+    <td>{{row.expiration_invoice}}</td>
+    <td>{{row.payment_invoice}}</td>
+  </tr>
+</table>
